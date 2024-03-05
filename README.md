@@ -26,7 +26,6 @@
  Entities
 
 ```text
-
     Users
     - userId [uuid, PK]
     - name [varchar(255), not null]
