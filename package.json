@@ -1,0 +1,32 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "migration:make": "npx tsx ./node_modules/.bin/knex migrate:make",
+    "migration:latest": "npx tsx ./node_modules/.bin/knex migrate:latest",
+    "migration:rollback": "npx tsx ./node_modules/.bin/knex migrate:rollback"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "eslint": "^8.57.0",
+    "knex": "^3.1.0",
+    "pg": "^8.11.3"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true
+  }
+}
